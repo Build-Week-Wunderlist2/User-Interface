@@ -1,0 +1,8 @@
+.features .flex(row) .feature-img {
+  width: 30%;
+  padding-left: 1%;
+}
+.features .feature-text {
+  width: 60%;
+  padding-right: 1%;
+}
