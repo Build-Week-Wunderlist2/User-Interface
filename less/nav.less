@@ -1,5 +1,9 @@
 .top-nav{
      .flex(row, space-around, center);
+     @media @mobile{
+        .flex(column, space-between, center); 
+        flex-wrap: wrap;
+        }
      padding: 1rem;
      padding-bottom: 0;
      .nav-flex{
@@ -12,16 +16,21 @@
        nav,.login{
           .flex(row, center, center);
           justify-self: flex-end;
-
+          @media @mobile{
+            .flex(column, space-between, center); 
+            flex-wrap: wrap;
+            }
           a{
               text-decoration: none;
               color: @font-color;
-              font-size: 1.5rem;
-              font-weight: 500;
-              padding: 20px;
-                      
+              font-size: 2rem;
+              padding: 3rem;
+              @media @mobile{
+                padding: 1rem;
+              }
+            }
+       
           }
-      }
-     border-bottom: 2px solid @border;
-     }   
-     
+     border-bottom: 0.2rem solid @border;          
+}
+
