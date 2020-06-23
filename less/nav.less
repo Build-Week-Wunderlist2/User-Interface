@@ -1,11 +1,15 @@
 .top-nav{
      .flex(row, space-around, center);
+      background-color: @main-bg;
      @media @mobile{
         .flex(column, space-between, center); 
         flex-wrap: wrap;
         }
      padding: 1rem;
      padding-bottom: 0;
+     .logo{
+      .flex(column, center, center); 
+     }
      .nav-flex{
          .flex(row, space-between, center); 
          max-width: 800px;
@@ -31,6 +35,6 @@
             }
        
           }
-     border-bottom:  solid @border;          
+     border-bottom: .25rem solid @border;          
 }
 
