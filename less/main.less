@@ -1,7 +1,8 @@
 .features{
-     .flex(row, space-between, center);
+     .flex(row, space-evenly, center); 
      padding: 2rem;
-     width: 80%;
+     width: 100%;
+
      @media @mobile{
           .flex(column, space-evenly, center); 
           flex-wrap: wrap;
@@ -10,30 +11,36 @@
           margin: 0 auto;
           }
 
-     .feature-img {
-          width: 30%;
-          padding: 2rem;
-          padding-left: 1%;
-          @media @mobile{
-               width: 80%;
-               padding:1rem;
-               padding-top: 0;
-               }          
-     }
-     .feature-text{
-          width: 60%;
-          padding: 5rem;
-          margin: 4rem;
-          background-color: @lt-blue;
-          border-radius: 30px;
-          @media @mobile{
-               width: 80%;
-               margin: 2rem;
-               padding: 2rem;
-               padding-top: 0;
-               }
+     .feature {
+          .flex(column, center, center);
+          p{
+               font-size: 2rem;
+               line-height: 4rem;
+               padding: 1rem;
           }
+          align-self: flex-start;
+          border: .1rem dotted @border; 
+          padding: 0;
+          h2{
+               font-variant: small-caps;
+          }
+          width: 30%;
+
+          @media @mobile{
+               width: 80%;
+               }     
+          .list{
+               .flex(column, center, center);               
+               li{
+                    padding:1rem;
+                    font-size: 2rem;
+               }
+               
+          }
+          
      }
+     }
+
 .team {
      width: 100%;
 		.person-flex {
@@ -63,7 +70,6 @@
 
                    .socials{
                        .flex(row, space-evenly, center);
-
                          }
 
 				.person-box {
