@@ -1,20 +1,35 @@
 .features {
      .flex(row, space-between, center);
-     padding: 2 rem;
-
+     padding: 2rem;
+     @media @mobile{
+          flex-direction: column; 
+          flex-wrap: wrap;
+          padding:1rem;
+          padding-top: 0;
+          }
 
      .feature-img {
           width: 30%;
-          padding: 2 rem;
+          padding: 2rem;
           padding-left: 1%;
-          
+          @media @mobile{
+               width: 80%;
+               padding:1rem;
+               padding-top: 0;
+               }          
      }
      .feature-text{
           width: 60%;
           padding: 5rem;
           margin: 4rem;
           background-color: @lt-blue;
-           border-radius: 30px;
-
+          border-radius: 3rem;
+          @media @mobile{
+               width: 80%;
+               margin: 2rem;
+               padding: 2rem;
+               padding-top: 0;
+               }
           }
+
  }
