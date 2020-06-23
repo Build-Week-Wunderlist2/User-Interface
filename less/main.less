@@ -12,15 +12,44 @@
           }
 
      .feature {
-          .flex(column, center, center);
+          .flex(column, space-evenly, center);
           p{
                font-size: 2rem;
                line-height: 4rem;
                padding: 1rem;
-          }
+               @media @mobile{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    padding: 1rem;  
+                    li{
+                         font-size: 1.5rem;
+                    }
+               }
+          }    
           align-self: flex-start;
-          border: .1rem dotted @border; 
+          font-size: 2rem;
+          line-height: 4rem;
+          padding: 1rem;
           padding: 0;
+          .border{
+               padding-right: 1rem;
+               padding-left: 1rem;
+               border-right: .1rem dotted @border; 
+               border-left: .1rem dotted @border; 
+               @media @mobile{
+                    border: none;
+                    border-top: .1rem dotted @border; 
+                    border-bottom: .1rem dotted @border; 
+    
+     
+               }
+          }
+          @media @mobile{
+               border: none;
+               margin:0 auto;
+               padding:0;     
+
+          }
           h2{
                font-variant: small-caps;
           }
