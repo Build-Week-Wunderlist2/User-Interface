@@ -222,6 +222,12 @@ img {
     flex-wrap: wrap;
   }
 }
+.top-nav .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .top-nav .nav-flex {
   display: flex;
   flex-direction: row;
