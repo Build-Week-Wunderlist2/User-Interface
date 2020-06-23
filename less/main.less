@@ -41,7 +41,7 @@
                margin: 0 auto;
                padding: 2rem;
                width: 80%;
-               @media @mobile{
+                    @media @mobile{
                     .flex(column, space-evenly, center);
                     flex-wrap: wrap;
                     width: 100%;
@@ -55,11 +55,17 @@
                     flex-wrap: wrap;
                     margin: 0rem auto;
                     padding: 0rem;
-                    width: 100%;
+                    width: 100%;           
+
                     @media @mobile{
                          .flex(column, space-evenly, space-evenly);
                     }
-                   
+
+                   .socials{
+                       .flex(row, space-evenly, center);
+
+                         }
+
 				.person-box {
                          clear: both;
                          margin: 2rem auto;
@@ -70,7 +76,8 @@
                          @media @mobile{
                               max-width: 100%;
                          }
-				}
+                    }
+                  
 				.name {
 					background: @lt-blue;
 					height: 6rem;
@@ -96,9 +103,11 @@
 						padding: 0.5rem;
                          }
                          img{
-                              max-width: 30%;
+                              max-width: 150px;
                          }
+                         
                     }
-			}
+
 		}
      }
+}

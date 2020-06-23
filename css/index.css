@@ -386,6 +386,12 @@ footer a {
     align-items: space-evenly;
   }
 }
+.team .person-flex .row .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .team .person-flex .row .person-box {
   clear: both;
   margin: 2rem auto;
@@ -430,5 +436,5 @@ footer a {
   padding: 0.5rem;
 }
 .team .person-flex .row .info img {
-  max-width: 50%;
+  max-width: 150px;
 }
