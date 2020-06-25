@@ -486,8 +486,19 @@ footer a {
 .team .person-flex .row .info p {
   padding: 0.5rem;
 }
-.team .person-flex .row .info img {
+.team .person-flex .row .info .pfp {
   max-width: 50%;
+  height: auto;
+}
+.team .person-flex .row .info .blerb {
+  line-height: 4rem;
+  padding: 3rem;
+}
+@media (max-width: 500px) {
+  .team .person-flex .row .info .blerb {
+    line-height: 2rem;
+    padding: 3rem;
+  }
 }
 @media (max-width: 500px) {
   .team .person-flex .row .info {
@@ -497,7 +508,7 @@ footer a {
     align-items: space-evenly;
   }
   .team .person-flex .row .info img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
   }
 }
