@@ -1,5 +1,5 @@
 .top-nav{
-     .flex(row, space-around, center);
+     .flex(row, space-evenly, center);
       background-color: @main-bg;
      @media @mobile{
         .flex(column, space-between, center); 
@@ -27,8 +27,12 @@
           a{
               text-decoration: none;
               color: @font-color;
-              font-size: 2rem;
-              padding: 3rem;
+              font-size: 1.7rem;
+              padding: 1rem;
+              @media @big{
+                font-size: 3rem;
+                padding: 3rem;
+                }
               @media @mobile{
                 padding: 1rem;
               }
