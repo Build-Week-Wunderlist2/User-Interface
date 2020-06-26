@@ -204,6 +204,20 @@ img {
     font-size: 2rem;
   }
 }
+@media (max-width: 400px) {
+  .wrap {
+    display: none;
+  }
+}
+.error-message {
+  display: none;
+}
+@media (max-width: 400px) {
+  .error-message {
+    display: block;
+    font-size: 5rem;
+  }
+}
 .top-nav {
   display: flex;
   flex-direction: row;
